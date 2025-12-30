@@ -6,7 +6,7 @@
 package event
 
 import (
-	"gopkg.in/yaml.v2"
+	"go.yaml.in/yaml/v2"
 )
 
 func ToYaml(event Event) ([]byte, error) {
