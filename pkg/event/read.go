@@ -6,7 +6,6 @@
 package event
 
 import (
-	"gopkg.in/yaml.v2"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -14,6 +13,8 @@ import (
 	"os"
 	"path"
 	"strings"
+
+	"go.yaml.in/yaml/v2"
 )
 
 func FromYaml(files string, recursive bool) ([]Event, error) {
